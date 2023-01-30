@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	width: 100%;
+}
+
+.container-fluid {
+	width: auto;
+}
+
+.blok {
+	padding: auto;
+	margin: auto;
+	width: auto;
+}
+
+.navbar {
+	padding: 10px 10px 10px 10px;
+	margin: 10px 8px 20px 8px;
+	background: darkblue;
+	border-radius: 5px;
+	position: sticky;
+	height: 100px;
+	top: 0;
+}
+
+.navbar-brand {
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	height: 70px;
+	align-items: center;
+	text-justify: center;
+	padding-left: 10px;
+	padding-right: 20px;
+	float: left;
+	display: flex;
+}
+
+.kotak-kiri {
+	width: 60%;
+	border-radius: 5px;
+	border: 3px Solid #dedede;
+	padding: 10px;
+    margin: 10px;
+	float: left;
+}
+.kotak-kiri h1{
+	text-align: center;
+
+}
+
+.kotak-kanan {
+    width: 35%;
+    border: 3px solid #dedede;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+.kotak-kanan h1 {
+	text-align: center;
+}
+
+.buttn {
+  position: relative;
+  border-radius: 5px;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: darkred;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.buttn span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.buttn::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.buttn:hover {
+  color: seagreen;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.buttn:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.buttn:focus {
+  outline: none;
+}
+
+.input_data{
+    width: 700px;
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-left: 15PX;
+    margin-bottom: 15px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.input_data:hover {
+  color: limegreen;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]
+{
+	position: relative;
+	top:0px;
+	width: 20px;
+	height: 20px;
+	-webkit-appearance: none;
+	outline: none;
+	transition: .5s;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+input[type="checkbox"]:before
+{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	border:3px solid #222666;
+	box-sizing: border-box;
+	transition: .5s;
+}
+input:checked[type="checkbox"]:before
+{
+	border-left: none;
+	border-top: none;
+	width: 10px;
+	border-color:green;
+	transform: rotate(45deg) translate(5px);
+	height: 25px;
+}
+
+.cari-data {
+	width: 300px;
+	height: 50px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 0px 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    display: inline;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cari-data:hover {
+  color: limegreen;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 1.2em 2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  float: right;
+  margin: 10px 0 10px 10px;
+
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.cari {
+  border-color: lightsalmon;
+  color: black;
+  background-image: linear-gradient(45deg, darkslategrey -40%, transparent 50%);
+  background-position: 100%;
+  background-size: 300%;
+  transition: background 400ms ease-in-out;
+  height: 50px;
+}
+.cari:hover {
+  background-position: 0;
+}
+
+.search {
+	width: 40%;
+	float: right;
+	position: sticky;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	height: 70px;
+	align-content: center;
+
+}
+
+.garis {
+	width: auto;
+	border: 2px solid #dedede;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.kotak{
+	border: 3px solid #dedede;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+}
+
+.blok > .kotak > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.blok > .kotak > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.blok > .kotak > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (max-width: 780px) {
+
+	.navbar {
+		width: auto;
+		height: auto;
+	}
+
+	.container {
+		width: auto;
+	}
+
+	.kotak-kiri {
+        width: auto;
+        float: left;
+    }
+    
+    .kotak-kanan {
+        width: auto;
+        float: none;
+    }
+
+    .search {
+    	width: auto;
+    	float: none;
+    	height: auto;
+    }
+
+    .input_data {
+    	width: auto;
+    	float: none;
+    }
+
+    .btn {
+    	width: auto;
+    	float: none;
+    	height: auto;
+    }
+
+    .cari {
+    	width: auto;
+    	float: none;
+    	height: 40px;
+    }
+
+    .cari-data {
+    	width: auto;
+    	height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+	.container {
+		width: auto;
+	}
+
+	.navbar {
+		width: auto;
+		height: auto;
+	}
+
+	.kotak-kiri {
+        width: auto;
+        float: right;
+    }
+    
+    .kotak-kanan {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+
+    .search {
+    	width: auto;
+    	float: none;
+    }
+
+    .input_data {
+    	width: auto;
+    	float: none;
+    }
+
+    .btn {
+    	width: auto;
+    	float: none;
+    }
+
+    .cari {
+    	width: auto;
+    	float: none;
+    }
+}

@@ -1,0 +1,74 @@
+<!<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tri Adhi Gunawan - BookShelf-Apps</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+    	<div class="container">
+    		<nav class="navbar">
+  				<div class="container-fluid">
+			      	<a class="navbar-brand" href="index.html">BookShelf-Apps</a>
+			    </div>
+			    <div class="search">
+			    	<form id="searchBook">
+			    		<span>
+							<input type="text" id="searchTitle" class="cari-data" placeholder="Silahkan Cari Buku...">
+							<button class="btn cari" type="submit" id="cariTitle">Cari Judul</button>
+						</span>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="kotak-kiri">
+				<form id="inputBuku">
+					<h1>Input Buku Baru</h1>
+					<div class="garis"></div>
+					<div class="blok">
+						<input class="input_data" type="text=" id="jdl" placeholder="Masukan Judul Buku..." required>
+						<input class="input_data" type="text=" id="pen" placeholder="Masukan Penulis..." required>
+						<input class="input_data" type="text=" id="thn" placeholder="Isikan Tahun..." maxlength="4" required>
+						<label>
+							<input class="input_data" type="checkbox" id="baca"><h3>Sudah Di Baca</h3>
+						</label>
+					</div>
+					<button type="submit" id="submitBuku" class="buttn"><span>Simpan Ke Rak Buku Belum Dibaca</span></button>
+				</form>
+			</div>
+		</div>
+		<aside>
+			<div class="kotak-kanan">
+				<h1>Rak Buku</h1>
+				<div class="garis"></div>
+				<div class="container">
+					<div class="blok">
+						<h3>Belum DiBaca</h3>
+						<div class="kotak" id="belum">
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="container">
+					<div class="blok">
+						<h3>Sudah DiBaca</h3>
+						<div class="kotak" id="sudah">
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</aside>
+        
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>
